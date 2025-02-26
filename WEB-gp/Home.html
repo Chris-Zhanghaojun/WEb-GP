@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">我的网站</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">关于</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- 展示信息部分 -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">示范信息</h5>
+                        <p class="card-text">这是一些示范展示信息。您可以在这里添加任何需要展示的内容。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 表单部分 -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">信息填写</h5>
+                        <form>
+                            <!-- 文本输入框 -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">姓名</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+
+                            <!-- 选择框 -->
+                            <div class="mb-3">
+                                <label for="category" class="form-label">选择类别</label>
+                                <select class="form-select" id="category">
+                                    <option selected>请选择...</option>
+                                    <option value="1">类别一</option>
+                                    <option value="2">类别二</option>
+                                    <option value="3">类别三</option>
+                                </select>
+                            </div>
+
+                            <!-- 点选框 -->
+                            <div class="mb-3">
+                                <label class="form-label">兴趣爱好</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="hobby1">
+                                    <label class="form-check-label" for="hobby1">
+                                        阅读
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="hobby2">
+                                    <label class="form-check-label" for="hobby2">
+                                        运动
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="hobby3">
+                                    <label class="form-check-label" for="hobby3">
+                                        音乐
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- 提交按钮 -->
+                            <button type="submit" class="btn btn-primary">提交</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入 Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
